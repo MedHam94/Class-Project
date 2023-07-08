@@ -1,87 +1,48 @@
-/* Box Model Hack */
 * {
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.clear {
-	clear: both;
-}
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
-}
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/* header */
 header {
-  display: flex;
   height: 55px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   background: black;
-  flex-basis: 100%;
+  display: flex;
 }
-
-header div.signIn {
+header .signIn {
   display: flex;
   align-items: center;
   flex-basis: 12%;
 }
-
-header div.signIn i{
+header .signIn i {
   color: white;
-  font-size: 14px;
+  font-size: 1rem;
+  margin: auto 10px;
 }
-
-
-/* ul and  li */
 header ul {
   display: flex;
   flex-basis: 80%;
   padding-left: 0;
 }
-
-header ul li{
+header ul li {
   flex-basis: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-header ul li:last-child{
+header ul li:last-child {
   flex-basis: auto;
 }
-
-.input{
+header .input {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   padding-right: 10px;
 }
-.input input{
+header .input input {
   width: 100%;
-}
-
-footer {
-
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+}/*# sourceMappingURL=style.css.map */

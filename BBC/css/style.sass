@@ -1,0 +1,46 @@
+$font-stack : 'Roboto', sans-serif
+// Box Model Hack
+*
+     box-sizing: border-box
+// style
+
+a
+     color: white
+     text-decoration: none
+     
+// header
+header
+     height: 55px
+     font-weight: bold
+     font-family: $font-stack
+     background: black
+     display: flex
+     .signIn
+          display: flex
+          align-items: center
+          flex-basis: 12%
+
+          i
+               color: white
+               font-size: 1rem
+               margin: auto 10px
+
+     // ul and li
+     ul
+          display: flex
+          flex-basis: 80%
+          padding-left: 0
+
+          li
+               flex-basis: 10%
+               display: flex
+               align-items: center
+               justify-content: center
+          li:last-child
+               flex-basis: auto
+     .input
+          display: flex
+          align-items: center
+          padding-right: 10px
+          input
+               width: 100%
