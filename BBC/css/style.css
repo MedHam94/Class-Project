@@ -48,10 +48,13 @@ header div.signIn i{
   color: white;
   font-size: 14px;
 }
+
+
 /* ul and  li */
 header ul {
   display: flex;
   flex-basis: 80%;
+  padding-left: 0;
 }
 
 header ul li{
