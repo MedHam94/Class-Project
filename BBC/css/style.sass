@@ -1,7 +1,18 @@
+@mixin respond-medium 
+    @media (max-width: 950px)  
+     @content 
+
+@mixin respond-small
+     @media (max-width: 768px)
+          @content
+
 $font-stack : 'Roboto', sans-serif
+
+
 // Box Model Hack
 *
      box-sizing: border-box
+
 // style
 
 a
@@ -9,17 +20,21 @@ a
      text-decoration: none
      
 // header
+
 header
      height: 55px
      font-weight: bold
      font-family: $font-stack
      background: black
      display: flex
+
      .signIn
           display: flex
           align-items: center
           flex-basis: 12%
-
+          a
+               @include respond-medium
+                    display: none
           i
                color: white
                font-size: 1rem
@@ -30,51 +45,88 @@ header
           display: flex
           flex-basis: 80%
           padding-left: 0
+          @include respond-medium
+               flex-basis: 200%
+               justify-content: center
+               
 
           li
                flex-basis: 10%
                display: flex
                align-items: center
                justify-content: center
+               @include respond-medium
+                    flex-basis: 12%
+               @include respond-small
+                    flex-basis: 20%
+
           li:last-child
                flex-basis: auto
+               @include respond-medium
+                    flex-basis: 10%
+          li:nth-child(n+6)
+               @include respond-small
+                    display: none          
+          
+     // search bar
+
      .input
           display: flex
           align-items: center
           padding-right: 10px
+          i
+               display: none
+               @include respond-medium
+                    display: inline
+                    color: white
           input
                width: 100%
+               @include respond-medium
+                    display: none
 
 // Main Section
+
+
      // Main Top
+
 main
      font-family: $font-stack
      .topMain
           display: flex
           justify-content: space-between
-
+          @include respond-small
+               display: block
      // Main
      .midMain
           display: flex
           justify-content: space-around
           height: 450px
+          @include respond-small
+               flex-direction: column
+               height: auto
 
           .left
                display: flex
                flex-direction: column
                background: #d2b8a1
-               width: 47%
-               
+               width: 47%     
                justify-content: flex-end
                padding: 10px
-
+               @include respond-small
+                    width: 100%
+                    height: 500px
+                    margin: 10px
+               
           .right
                display: flex
                flex-wrap: wrap
                width: 49%
                justify-content: space-between
                gap: 5px
-
+               @include respond-small
+                    width: 100%
+                    margin: 10px
+                    height: 380px
                section
                     background: #cfd7da
                     width: 49%
@@ -105,7 +157,7 @@ main
 
                     div
                          background: #303212
-                         height: 240px
+                         height: 170px
                     
                     span
                          border-left: 3px solid red

@@ -19,6 +19,11 @@ header .signIn {
   align-items: center;
   flex-basis: 12%;
 }
+@media (max-width: 950px) {
+  header .signIn a {
+    display: none;
+  }
+}
 header .signIn i {
   color: white;
   font-size: 1rem;
@@ -29,22 +34,62 @@ header ul {
   flex-basis: 80%;
   padding-left: 0;
 }
+@media (max-width: 950px) {
+  header ul {
+    flex-basis: 200%;
+    justify-content: center;
+  }
+}
 header ul li {
   flex-basis: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 950px) {
+  header ul li {
+    flex-basis: 12%;
+  }
+}
+@media (max-width: 768px) {
+  header ul li {
+    flex-basis: 20%;
+  }
+}
 header ul li:last-child {
   flex-basis: auto;
+}
+@media (max-width: 950px) {
+  header ul li:last-child {
+    flex-basis: 10%;
+  }
+}
+@media (max-width: 768px) {
+  header ul li:nth-child(n+6) {
+    display: none;
+  }
 }
 header .input {
   display: flex;
   align-items: center;
   padding-right: 10px;
 }
+header .input i {
+  display: none;
+}
+@media (max-width: 950px) {
+  header .input i {
+    display: inline;
+    color: white;
+  }
+}
 header .input input {
   width: 100%;
+}
+@media (max-width: 950px) {
+  header .input input {
+    display: none;
+  }
 }
 
 main {
@@ -54,10 +99,21 @@ main .topMain {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  main .topMain {
+    display: block;
+  }
+}
 main .midMain {
   display: flex;
   justify-content: space-around;
   height: 450px;
+}
+@media (max-width: 768px) {
+  main .midMain {
+    flex-direction: column;
+    height: auto;
+  }
 }
 main .midMain .left {
   display: flex;
@@ -67,12 +123,26 @@ main .midMain .left {
   justify-content: flex-end;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  main .midMain .left {
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+  }
+}
 main .midMain .right {
   display: flex;
   flex-wrap: wrap;
   width: 49%;
   justify-content: space-between;
   gap: 5px;
+}
+@media (max-width: 768px) {
+  main .midMain .right {
+    width: 100%;
+    margin: 10px;
+    height: 380px;
+  }
 }
 main .midMain .right section {
   background: #cfd7da;
@@ -101,7 +171,7 @@ main .botMain .mainArticle section {
 }
 main .botMain .mainArticle section div {
   background: #303212;
-  height: 240px;
+  height: 170px;
 }
 main .botMain .mainArticle section span {
   border-left: 3px solid red;
