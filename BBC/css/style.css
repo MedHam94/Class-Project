@@ -54,12 +54,12 @@ main .topMain {
   display: flex;
   justify-content: space-between;
 }
-main .main {
+main .midMain {
   display: flex;
   justify-content: space-around;
   height: 450px;
 }
-main .main .left {
+main .midMain .left {
   display: flex;
   flex-direction: column;
   background: #d2b8a1;
@@ -67,18 +67,43 @@ main .main .left {
   justify-content: flex-end;
   padding: 10px;
 }
-main .main .right {
+main .midMain .right {
   display: flex;
   flex-wrap: wrap;
   width: 49%;
   justify-content: space-between;
   gap: 5px;
 }
-main .main .right section {
+main .midMain .right section {
   background: #cfd7da;
   width: 49%;
   display: flex;
   padding: 0px 10px 10px 10px;
   flex-direction: column;
   justify-content: flex-end;
+}
+main .botMain h2 {
+  margin-left: 10px;
+  margin-top: 40px;
+  padding-left: 5px;
+  border-left: 4px solid red;
+  font-family: "Roboto", sans-serif;
+}
+main .botMain .mainArticle {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+main .botMain .mainArticle section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+main .botMain .mainArticle section div {
+  background: #303212;
+  height: 240px;
+}
+main .botMain .mainArticle section span {
+  border-left: 3px solid red;
+  padding-left: 10px;
 }/*# sourceMappingURL=style.css.map */
