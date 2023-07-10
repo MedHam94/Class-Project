@@ -104,6 +104,9 @@ main{
     .right{
         width: 50%;
         text-align: left;
+        @include respond(small){
+            width: 75%;
+        }
        
         h1{
             font-size: 4vmin;
