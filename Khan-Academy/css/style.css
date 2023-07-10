@@ -27,7 +27,7 @@ header nav .left {
 header nav .left i {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 620px) {
   header nav .left i {
     display: block;
     color: blue;
@@ -37,7 +37,7 @@ header nav .left i {
 header nav .left input {
   width: 60%;
 }
-@media (max-width: 768px) {
+@media (max-width: 620px) {
   header nav .left input {
     display: none;
   }
@@ -48,7 +48,7 @@ header nav .right ul {
   padding: 0;
   width: 250px;
 }
-@media (max-width: 768px) {
+@media (max-width: 620px) {
   header nav .right ul {
     width: 160px;
   }
@@ -56,7 +56,7 @@ header nav .right ul {
 header nav .right ul li {
   flex-basis: 30%;
 }
-@media (max-width: 768px) {
+@media (max-width: 620px) {
   header nav .right ul li {
     display: none;
   }
@@ -64,7 +64,7 @@ header nav .right ul li {
 header nav .right ul li:first-child {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 620px) {
   header nav .right ul li:first-child {
     display: block;
   }
@@ -78,8 +78,20 @@ main {
   padding-top: 100px;
   font-family: "Rubik", sans-serif;
 }
+@media (max-width: 620px) {
+  main {
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+  }
+}
 main .left {
   width: 50%;
+}
+@media (max-width: 620px) {
+  main .left {
+    width: 75%;
+  }
 }
 main .left img {
   max-width: 100%;

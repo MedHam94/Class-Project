@@ -3,8 +3,9 @@
       @media (max-width: 1024px) { @content }
     }
     @if($breakpoint == small)  {
-      @media (max-width: 768px) { @content }
+      @media (max-width: 620px) { @content }
     }
+    
   }
 
 $font-stack : 'Rubik', sans-serif;
@@ -83,17 +84,27 @@ main{
     display: flex;
     padding-top: 100px;
     font-family: $font-stack;
+    @include respond(small){
+        flex-direction: column;
+        padding-top: 30px;
+        align-items: center;
+    }
 
     .left{
         width: 50%;
+        @include respond(small){
+            width: 75%;
+        }
         img{
             max-width: 100%;
         }
+        
     }
 
     .right{
         width: 50%;
         text-align: left;
+       
         h1{
             font-size: 4vmin;
             width: 60%;
