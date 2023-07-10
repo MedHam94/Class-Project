@@ -18,38 +18,26 @@ a{
     text-decoration: none;
     color: black;
 }
+li{
+    list-style: none;
+}
 // style
-body{
-    display: flex;
-    flex-wrap: wrap;
+
 
 // style the nav bar
+.first{
     nav{
-        flex-basis: 300px;
-        padding: 15px;
+        width: 200px;
         position: fixed;
+        display: inline-block;
+        margin: 0;
     }
-        .top{
-            padding: 20px 0 40px;
-        }
-        .bot{
-            ul{
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                
-                li{
-                    list-style: none;
-                    flex-basis: 50px;
-                }
-            }
-        }
-        // main section style
     main{
+        display: inline-block;
+        margin-left: 200px;
         display: flex;
-        margin-left: 250px;
         .mid{
-
+            width: 60%;
             h4{
                 color: orange;
             }
@@ -60,12 +48,36 @@ body{
                 max-width: 100%;
             }
         }
+        aside{
+            width: 40%;
+            ul{
+
+                li{
+                    border-bottom: 1px solid gray;
+                    a{
+                        h3{
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+
+        }
     }
-    // aside Style
-    
-    // article section style
-    article{
-        flex-basis: 100%;
-        margin-left: 250px;
+}    
+.latest{
+    margin-left: 200px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+article{
+    margin-left: 200px;
+    margin-right: 10px;
+    section{
+        display: flex;
+        justify-content: space-around;
+        img{
+            margin: 10px;
+        }
     }
 }

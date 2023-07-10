@@ -18,41 +18,57 @@ a {
   color: black;
 }
 
-body {
-  display: flex;
-  flex-wrap: wrap;
-}
-body nav {
-  flex-basis: 300px;
-  padding: 15px;
-  position: fixed;
-}
-body .top {
-  padding: 20px 0 40px;
-}
-body .bot ul {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-body .bot ul li {
+li {
   list-style: none;
-  flex-basis: 50px;
 }
-body main {
+
+.first nav {
+  width: 200px;
+  position: fixed;
+  display: inline-block;
+  margin: 0;
+}
+.first main {
+  display: inline-block;
+  margin-left: 200px;
   display: flex;
-  margin-left: 250px;
 }
-body main .mid h4 {
+.first main .mid {
+  width: 60%;
+}
+.first main .mid h4 {
   color: orange;
 }
-body main .mid span {
+.first main .mid span {
   display: block;
 }
-body main .mid img {
+.first main .mid img {
   max-width: 100%;
 }
-body article {
-  flex-basis: 100%;
-  margin-left: 250px;
+.first main aside {
+  width: 40%;
+}
+.first main aside ul li {
+  border-bottom: 1px solid gray;
+}
+.first main aside ul li a h3 {
+  font-size: 27px;
+}
+
+.latest {
+  margin-left: 200px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+article {
+  margin-left: 200px;
+  margin-right: 10px;
+}
+article section {
+  display: flex;
+  justify-content: space-around;
+}
+article section img {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */
