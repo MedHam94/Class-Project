@@ -24,8 +24,23 @@ header nav .left {
   align-items: center;
   padding-left: 10px;
 }
+header nav .left i {
+  display: none;
+}
+@media (max-width: 768px) {
+  header nav .left i {
+    display: block;
+    color: blue;
+    padding-left: 20px;
+  }
+}
 header nav .left input {
   width: 60%;
+}
+@media (max-width: 768px) {
+  header nav .left input {
+    display: none;
+  }
 }
 header nav .right ul {
   display: flex;
@@ -33,8 +48,26 @@ header nav .right ul {
   padding: 0;
   width: 250px;
 }
+@media (max-width: 768px) {
+  header nav .right ul {
+    width: 160px;
+  }
+}
 header nav .right ul li {
   flex-basis: 30%;
+}
+@media (max-width: 768px) {
+  header nav .right ul li {
+    display: none;
+  }
+}
+header nav .right ul li:first-child {
+  display: none;
+}
+@media (max-width: 768px) {
+  header nav .right ul li:first-child {
+    display: block;
+  }
 }
 
 main {
@@ -65,8 +98,6 @@ main .right ul {
   padding: 35px 0 0 0;
   display: flex;
   justify-content: space-between;
-  min-width: 20%;
-  width: 61%;
   font-size: 2vmin;
 }
 main .right ul li {
@@ -74,14 +105,28 @@ main .right ul li {
   justify-content: center;
   align-items: center;
   background: blue;
-  height: 4vmin;
-  width: 6vmax;
-  margin: 1vmin;
-  padding: 0 1vmin;
+  flex-grow: 1;
+  margin: 0 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-main .right ul li a {
+main .right ul a {
   color: white;
 }
-main .right ul li:first-child {
+main .right li:first-child {
   margin-left: 0;
+}
+@media (max-width: 1024px) {
+  main .right li:first-child {
+    max-width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  main .right li:nth-child(n+2) {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
