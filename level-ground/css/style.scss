@@ -1,0 +1,63 @@
+$font-stack : 'Roboto', sans-serif;
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    .firstSection{
+        background: #66768a;
+        padding: 0 35px;
+        font-family: $font-stack;
+        // nav bar
+        nav{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            ul{
+                padding: 0;
+                display: flex;
+                width: 33%;
+                align-items: center;
+                gap: 15px;
+                
+            }
+            .logo{
+                width: 33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .donate{
+                width: 33%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+        // main section
+        main{
+            padding: 90px 130px 1px 130px;
+            text-align: center;
+            color: white;
+            h1{
+                font-size: 4em;
+            }
+            .par{
+                font-size: 28px;
+            }
+            .smallPar{
+                margin: 65px 0;
+                font-size: 23px;
+            }
+            span{
+                display: inline-block;
+                margin: 50px 0;
+                color: black;
+                
+            }
+        }
+    }
+}

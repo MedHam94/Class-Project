@@ -1,42 +1,57 @@
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
+a {
+  text-decoration: none;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+li {
+  list-style: none;
 }
 
-.clear {
-	clear: both;
+body .firstSection {
+  background: #66768a;
+  padding: 0 35px;
+  font-family: "Roboto", sans-serif;
 }
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
+body .firstSection nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
 }
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
+body .firstSection nav ul {
+  padding: 0;
+  display: flex;
+  width: 33%;
+  align-items: center;
+  gap: 15px;
 }
-
-footer {
-
+body .firstSection nav .logo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+body .firstSection nav .donate {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .firstSection main {
+  padding: 90px 130px 1px 130px;
+  text-align: center;
+  color: white;
+}
+body .firstSection main h1 {
+  font-size: 4em;
+}
+body .firstSection main .par {
+  font-size: 28px;
+}
+body .firstSection main .smallPar {
+  margin: 65px 0;
+  font-size: 23px;
+}
+body .firstSection main span {
+  display: inline-block;
+  margin: 50px 0;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
