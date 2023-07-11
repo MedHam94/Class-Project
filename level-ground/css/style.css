@@ -58,13 +58,64 @@ body .firstSection main span {
   color: black;
 }
 body .secondSection {
-  padding: 90px 165px;
+  padding: 90px 35px;
   text-align: center;
 }
 body .secondSection h2 {
   font-size: 2em;
 }
 body .secondSection p {
-  padding: 0 250px;
+  padding: 0 400px;
   font-size: 1.6em;
+}
+body .thirdSection {
+  background: #dbdfe2;
+  padding: 90px 35px;
+  display: flex;
+}
+body .thirdSection .left {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .thirdSection .left div {
+  width: 60%;
+  height: 15vw;
+  background: #66768a;
+}
+body .thirdSection .left a {
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 130px;
+}
+body .thirdSection .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 100px;
+  text-align: center;
+}
+body .thirdSection .right div {
+  width: 60%;
+  height: 15vw;
+  background: #66768a;
+}
+body .thirdSection .right a {
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 130px;
+}
+body .fourthSection {
+  text-align: center;
+  padding: 0 35px;
 }/*# sourceMappingURL=style.css.map */

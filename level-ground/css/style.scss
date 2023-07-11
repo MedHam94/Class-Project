@@ -61,16 +61,77 @@ body{
             }
         }
     }
+    // second Section
     .secondSection{
-        padding: 90px 165px;
+        padding: 90px 35px;
         text-align: center;
         h2{
                 font-size: 2em;
         }
         p{
-            padding: 0 250px;
+            padding: 0 400px;
             font-size: 1.6em;
         }
         
+    }
+
+    // thirdSection
+    .thirdSection{
+        background: #dbdfe2;
+        padding: 90px 35px;
+        display: flex;
+        // left Section
+        .left{
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            div{
+                width: 60%;
+                height: 15vw;
+                background: #66768a;
+            }
+            a{
+                
+                border: 1px solid black;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 130px;
+
+            }
+        }
+        // right Section
+        .right{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 100px;
+            text-align: center;
+            div{
+                width: 60%;
+                height: 15vw;
+                background: #66768a;
+            }
+            a{
+                
+                border: 1px solid black;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 130px;
+
+            }
+        }
+    }
+    .fourthSection{
+        text-align: center;
+        padding: 0 35px;
     }
 }
