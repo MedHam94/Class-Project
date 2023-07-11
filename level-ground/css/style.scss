@@ -7,10 +7,11 @@ li{
     list-style: none;
 }
 body{
+    font-family: $font-stack;
     .firstSection{
         background: #66768a;
         padding: 0 35px;
-        font-family: $font-stack;
+        
         // nav bar
         nav{
             height: 70px;
@@ -46,11 +47,11 @@ body{
                 font-size: 4em;
             }
             .par{
-                font-size: 28px;
+                font-size: 2em;
             }
             .smallPar{
                 margin: 65px 0;
-                font-size: 23px;
+                font-size: 1.64em;
             }
             span{
                 display: inline-block;
@@ -59,5 +60,17 @@ body{
                 
             }
         }
+    }
+    .secondSection{
+        padding: 90px 165px;
+        text-align: center;
+        h2{
+                font-size: 2em;
+        }
+        p{
+            padding: 0 250px;
+            font-size: 1.6em;
+        }
+        
     }
 }

@@ -6,10 +6,12 @@ li {
   list-style: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 body .firstSection {
   background: #66768a;
   padding: 0 35px;
-  font-family: "Roboto", sans-serif;
 }
 body .firstSection nav {
   height: 70px;
@@ -44,14 +46,25 @@ body .firstSection main h1 {
   font-size: 4em;
 }
 body .firstSection main .par {
-  font-size: 28px;
+  font-size: 2em;
 }
 body .firstSection main .smallPar {
   margin: 65px 0;
-  font-size: 23px;
+  font-size: 1.64em;
 }
 body .firstSection main span {
   display: inline-block;
   margin: 50px 0;
   color: black;
+}
+body .secondSection {
+  padding: 90px 165px;
+  text-align: center;
+}
+body .secondSection h2 {
+  font-size: 2em;
+}
+body .secondSection p {
+  padding: 0 250px;
+  font-size: 1.6em;
 }/*# sourceMappingURL=style.css.map */
