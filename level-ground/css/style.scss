@@ -52,6 +52,12 @@ body{
             .smallPar{
                 margin: 65px 0;
                 font-size: 1.64em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    padding-right: 10px;
+                }
             }
             span{
                 display: inline-block;
@@ -150,6 +156,58 @@ body{
             align-items: center;
             justify-content: center;
             margin: 0 auto;
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 35px;
+        background: #161f2a;
+        color: white;
+        .left{
+            flex-basis: 10%;
+            .top{
+                font-size: 1.8em;
+                display: flex;
+                justify-content: space-between;
+            }
+            .mid{
+                color: gray;
+                h5{
+                    margin: 15px 0  0 0;
+                }
+                ul{
+                    padding: 0;
+                    margin: 5px 0 0 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .bot{
+                color: gray;
+                h5{
+                    margin: 15px 0  0 0;
+                }
+                ul{
+                    padding: 0;
+                    margin: 5px 0 0 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        
+    }
+    .desc{
+        
+        padding: 0 35px;
+        background: #161f2a;
+        color: white;
+        padding: 15px 35px;
+        p{
+            margin: 0;
+            border-top: 1px solid white;
+            padding: 20px 0;
         }
     }
 }
