@@ -207,7 +207,7 @@ body .fourthSection div {
 }
 body .footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 20px 35px;
   background: #161f2a;
   color: white;
@@ -258,6 +258,9 @@ body .footer .left .bot ul {
   justify-content: space-between;
 }
 body .footer .left .bot ul li a {
+  color: white;
+}
+body .footer .right address a {
   color: white;
 }
 body .desc {

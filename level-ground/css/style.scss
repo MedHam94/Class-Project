@@ -229,7 +229,7 @@ body{
     }
     .footer{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         padding: 20px 35px;
         background: #161f2a;
         color: white;
@@ -278,6 +278,13 @@ body{
                             color: white;
                         }
                     }
+                }
+            }
+        }
+        .right{
+            address{
+                a{
+                    color: white;
                 }
             }
         }
