@@ -1,4 +1,29 @@
 $font-stack : 'Roboto', sans-serif;
+// media query
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+
+
+  @mixin large-screen {
+    @media (max-width: $breakpoint-large) {
+      @content;
+    }
+  }
+  
+  @mixin medium-screen {
+    @media (max-width: $breakpoint-medium) {
+      @content;
+    }
+  }
+  
+  @mixin small-screen {
+    @media (max-width: $breakpoint-small) {
+      @content;
+    }
+  }
+
+
 
 a{
     text-decoration: none;
@@ -40,14 +65,20 @@ body{
         }
         // main section
         main{
-            padding: 90px 130px 1px 130px;
+            padding: 90px 8vw 0 8vw;
             text-align: center;
             color: white;
             h1{
                 font-size: 4em;
+                @include large-screen{
+                    font-size: 3em;
+                }
             }
             .par{
                 font-size: 2em;
+                @include medium-screen {
+                    font-size: 1.5em;
+                }
             }
             .smallPar{
                 margin: 65px 0;
@@ -73,10 +104,15 @@ body{
         text-align: center;
         h2{
                 font-size: 2em;
+                
         }
         p{
-            padding: 0 400px;
+            padding: 0 20vw;
             font-size: 1.6em;
+            @include medium-screen{
+                padding: 0 10vw;
+                font-size: 1.2em;
+            }
         }
         
     }
@@ -86,6 +122,10 @@ body{
         background: #dbdfe2;
         padding: 90px 35px;
         display: flex;
+        gap: 20px;
+        @include medium-screen{
+            justify-content: center;
+        }
         // left Section
         .left{
             padding-left: 100px;
@@ -93,10 +133,21 @@ body{
             flex-direction: column;
             align-items: center;
             text-align: center;
+            @include medium-screen{
+                padding-left: 0;
+            }
             div{
                 width: 60%;
                 height: 15vw;
                 background: #66768a;
+                @include medium-screen{
+                    width: 100%;
+                }
+            }
+            p{
+                @include medium-screen{
+                    display: none;
+                }
             }
             a{
                 
@@ -118,10 +169,21 @@ body{
             align-items: center;
             padding-right: 100px;
             text-align: center;
+            @include medium-screen{
+                padding-right: 0;
+            }
             div{
                 width: 60%;
                 height: 15vw;
                 background: #66768a;
+                @include medium-screen{
+                    width: 100%;
+                }
+            }
+            p{
+                @include medium-screen{
+                    display: none;
+                }
             }
             a{
                 
@@ -141,11 +203,18 @@ body{
         padding: 90px 35px;
         h2{
             font-size: 2em;
+            @include medium-screen{
+                font-size: 1.6em;
+            }
         }
         
         p{
-            padding: 0 400px;
+            padding: 0 20vw;
             font-size: 1.6em;
+            @include medium-screen{
+                padding:  0 10vw;
+                font-size: 1.4em;
+            }
         }
         div{
             border: 1px solid black;
@@ -161,11 +230,17 @@ body{
     .footer{
         display: flex;
         justify-content: flex-start;
-        padding: 0 35px;
+        padding: 20px 35px;
         background: #161f2a;
         color: white;
         .left{
             flex-basis: 10%;
+            @include large-screen{
+                flex-basis: 14%;
+            }
+            @include medium-screen{
+                flex-basis: 25%;
+            }
             .top{
                 font-size: 1.8em;
                 display: flex;
@@ -181,6 +256,11 @@ body{
                     margin: 5px 0 0 0;
                     display: flex;
                     justify-content: space-between;
+                    li{
+                        a{
+                            color: white;
+                        }
+                    }
                 }
             }
             .bot{
@@ -193,6 +273,11 @@ body{
                     margin: 5px 0 0 0;
                     display: flex;
                     justify-content: space-between;
+                    li{
+                        a{
+                            color: white;
+                        }
+                    }
                 }
             }
         }
@@ -208,6 +293,9 @@ body{
             margin: 0;
             border-top: 1px solid white;
             padding: 20px 0;
+            @include large-screen{
+                font-size: 0.9em;
+            }
         }
     }
 }
